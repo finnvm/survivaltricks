@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Skills</title>
+    <link rel="stylesheet" href="article-styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZER0BQRED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BZER0BQRED');
+</script>
+
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <article>
+            <h1>Navigation Skills</h1>
+            <img src="navigation.jpeg" alt="Navigation Skills">
+            <p>Mastering navigation skills is essential for survival in the wilderness. Being able to find your way can mean the difference between safety and danger. Here are some key navigation skills to learn:</p>
+            <h2>Using a Map and Compass</h2>
+            <p>A map and compass are essential tools for navigation. Learn how to read a topographic map and use a compass to find your direction. Practice taking bearings and plotting a course.</p>
+            <h2>Recognizing Natural Landmarks</h2>
+            <p>Natural landmarks such as mountains, rivers, and rock formations can help you orient yourself. Use these landmarks in conjunction with your map and compass to stay on track.</p>
+            <h2>Understanding the Sun and Stars</h2>
+            <p>The sun rises in the east and sets in the west, providing a general sense of direction. At night, the North Star can help you determine true north. Learn to identify constellations for navigation.</p>
+            <h2>Using Technology</h2>
+            <p>Modern technology such as GPS devices and smartphones with navigation apps can be very useful. However, always have a backup method as batteries can die and signals can be lost.</p>
+            <h2>Practicing Your Skills</h2>
+            <p>Regular practice is crucial. Take time to practice your navigation skills in various environments and conditions. The more you practice, the more confident you will become.</p>
+            <p>By mastering these navigation skills, you can confidently find your way in the wilderness, ensuring your safety and increasing your chances of survival.</p>
+        </article>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>

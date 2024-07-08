@@ -23,29 +23,13 @@ header nav a {
     text-decoration: none;
 }
 
-.hero {
-    background: #34495e;
-    color: white;
-    padding: 3em 0;
-    text-align: center;
-}
-
-.hero h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.articles {
+main {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.articles h2 {
+.articles-list h1 {
     text-align: center;
     margin-bottom: 1em;
 }
@@ -53,13 +37,9 @@ header nav a {
 .article {
     background: white;
     margin: 1em 0;
-    padding: 1em;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.article h3 {
-    margin-top: 0;
+    overflow: hidden;
 }
 
 .article a {
@@ -71,12 +51,37 @@ header nav a {
 .article img {
     width: 100%;
     height: auto;
-    border-radius: 5px 5px 0 0;
 }
 
-.article h3, .article p {
+.article h2, .article p {
     margin: 0;
-    padding: 0.5em;
+    padding: 1em;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.pagination a {
+    padding: 0.5em 1em;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #34495e;
+}
+
+.pagination a.active {
+    background-color: #1abc9c;
+    color: #fff;
 }
 
 
@@ -101,18 +106,3 @@ footer .social-icons {
 footer .social-icons a {
     margin: 0 0.5em;
 }
-
-
-.article img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    border-radius: 5px 5px 0 0;
-}
-
-@media (min-width: 768px) {
-    .article img {
-        max-height: 300px;
-    }
-}
-

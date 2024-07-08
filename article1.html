@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Build a Shelter</title>
+    <link rel="stylesheet" href="article-styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZER0BQRED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BZER0BQRED');
+</script>
+
+<body>
+
+    <header id="header"></header>
+
+    <main>
+        <article>
+            <h1>How to Build a Shelter</h1>
+            <img src="shelter.jpeg" alt="Shelter Image">
+            <p>Building a shelter in the wild is crucial for survival. It protects you from the elements, provides warmth, and gives you a sense of security. Here are the steps to build a basic shelter:</p>
+            <h2>Step 1: Choose a Location</h2>
+            <p>Select a dry, flat area away from hazards like falling branches or flooding. Look for natural windbreaks like rock formations or dense foliage.</p>
+            <h2>Step 2: Gather Materials</h2>
+            <p>Collect sturdy branches for the frame, smaller sticks for support, and leaves or grass for insulation. You can also use a tarp or poncho if available.</p>
+            <h2>Step 3: Build the Frame</h2>
+            <p>Arrange the sturdy branches in a lean-to or A-frame structure. Secure them firmly in the ground and lash them together if possible.</p>
+            <h2>Step 4: Add Insulation</h2>
+            <p>Cover the frame with smaller sticks, leaves, and grass. Layer the materials to keep out wind and rain. Ensure there are no gaps.</p>
+            <h2>Step 5: Finishing Touches</h2>
+            <p>Make the shelter comfortable by adding a layer of leaves or grass inside. Check the stability and make adjustments as needed.</p>
+            <p>With these steps, you can build a basic shelter that will help you survive in the wilderness. Always prioritize safety and adapt to the available resources.</p>
+        </article>
+    </main>
+
+    <footer id="footer"></footer>
+
+</body>
+</html>

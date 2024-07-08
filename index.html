@@ -12,40 +12,61 @@
                 .then(data => {
                     document.getElementById('header').innerHTML = data;
                 });
+
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer').innerHTML = data;
+                });
         });
     </script>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZER0BQRED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BZER0BQRED');
+</script>
+
 <body>
 
     <header id="header"></header>
 
-    <section class="hero">
+    <!-- <section class="hero">
         <h1>Survival Tricks</h1>
         <p>Master the Wild</p>
-    </section>
+    </section> -->
 
     <section class="articles">
         <h2>Featured Articles</h2>
         <div class="article">
-            <h3>How to Build a Shelter</h3>
-            <p>Learn the essentials of building a shelter in the wild with minimal supplies.</p>
+            <a href="article1.html">
+                <img src="shelter.jpeg" alt="How to Build a Shelter">
+                <h3>How to Build a Shelter</h3>
+                <p>Learn the essentials of building a shelter in the wild with minimal supplies.</p>
+            </a>
         </div>
         <div class="article">
-            <h3>Finding Water in the Wilderness</h3>
-            <p>Discover techniques to locate and purify water sources while on the move.</p>
+            <a href="article2.html">
+                <img src="water.jpeg" alt="Finding Water in the Wilderness">
+                <h3>Finding Water in the Wilderness</h3>
+                <p>Discover techniques to locate and purify water sources while on the move.</p>
+            </a>
         </div>
         <div class="article">
-            <h3>Fire Starting Tips</h3>
-            <p>Master the art of fire starting with these simple and effective tips.</p>
+            <a href="article3.html">
+                <img src="fire.jpeg" alt="Fire Starting Tips">
+                <h3>Fire Starting Tips</h3>
+                <p>Master the art of fire starting with these simple and effective tips.</p>
+            </a>
         </div>
     </section>
 
-    <footer>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Articles</a>
-            <a href="#">Contact Us</a>
-        </nav>
-        <div class="social-icons">
-            <a href="#"><img
+    <footer id="footer"></footer>
+
+</body>
+</html>
