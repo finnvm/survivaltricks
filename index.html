@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival Tricks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header').innerHTML = data;
+                });
+        });
+    </script>
+</head>
+<body>
+
+    <header id="header"></header>
+
+    <section class="hero">
+        <h1>Survival Tricks</h1>
+        <p>Master the Wild</p>
+    </section>
+
+    <section class="articles">
+        <h2>Featured Articles</h2>
+        <div class="article">
+            <h3>How to Build a Shelter</h3>
+            <p>Learn the essentials of building a shelter in the wild with minimal supplies.</p>
+        </div>
+        <div class="article">
+            <h3>Finding Water in the Wilderness</h3>
+            <p>Discover techniques to locate and purify water sources while on the move.</p>
+        </div>
+        <div class="article">
+            <h3>Fire Starting Tips</h3>
+            <p>Master the art of fire starting with these simple and effective tips.</p>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Articles</a>
+            <a href="#">Contact Us</a>
+        </nav>
+        <div class="social-icons">
+            <a href="#"><img
