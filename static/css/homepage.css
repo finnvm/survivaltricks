@@ -1,0 +1,164 @@
+/* homepage.css */
+
+/* Import the Lato font from Google Fonts and Montserrat for headings */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e; /* Dark background color */
+    color: #e0e0e0; /* Light text color */
+}
+
+header, footer {
+    background-color: #004d40; /* Dark teal */
+    color: white;
+    padding: 15px 0; /* Vertical padding */
+    width: 100%; /* Full width */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container, footer .container {
+    max-width: 1000px; /* Maximum width */
+    margin: 0 auto; /* Centering */
+    padding: 0 20px; /* Horizontal padding */
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Exciting font for the header and footer */
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1000px; /* Maximum width */
+    margin: 0 auto; /* Centering */
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: #26a69a; /* Lighter teal for headings */
+    font-family: 'Montserrat', sans-serif; /* Exciting font for headings */
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+article {
+    background: #2e2e2e; /* Darker gray for article background */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+article h2 {
+    margin-top: 0;
+    color: #26a69a; /* Lighter teal */
+    font-family: 'Montserrat', sans-serif;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.05);
+}
+
+article p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #cccccc; /* Light gray for text */
+}
+
+article a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffab40; /* Brighter color for 'read more' links */
+}
+
+article a:hover {
+    color: #ffca28; /* Even brighter color on hover */
+}
+
+.admin-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-new-article {
+    background-color: #4caf50; /* New Article button color */
+    color: white;
+    margin-bottom: 20px; /* Space below the button */
+}
+
+.btn-edit {
+    background-color: #26a69a; /* Edit button color */
+    color: white;
+}
+
+.btn-delete {
+    background-color: #e57373; /* Delete button color */
+    color: white;
+}
+
+.btn-new-article:hover {
+    background-color: #66bb6a; /* New Article button hover color */
+}
+
+.btn-edit:hover {
+    background-color: #2bbbad; /* Edit button hover color */
+}
+
+.btn-delete:hover {
+    background-color: #ef5350; /* Delete button hover color */
+}
+
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: white;
+    background-color: #004d40; /* Dark teal */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #26a69a; /* Lighter teal */
+    color: white;
+}

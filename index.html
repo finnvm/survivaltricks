@@ -1,72 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survival Tricks</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('header.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                });
+    <title>Survival Tricks - Homepage</title>
+    
+    <link rel="stylesheet" href="static/css/homepage.css">
 
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer').innerHTML = data;
-                });
-        });
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BZER0BQRED"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BZER0BQRED');
     </script>
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZER0BQRED"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BZER0BQRED');
-</script>
-
 <body>
-
-    <header id="header"></header>
-
-    <!-- <section class="hero">
-        <h1>Survival Tricks</h1>
-        <p>Master the Wild</p>
-    </section> -->
-
-    <section class="articles">
-        <h2>Featured Articles</h2>
-        <div class="article">
-            <a href="article1.html">
-                <img src="shelter.jpeg" alt="How to Build a Shelter">
-                <h3>How to Build a Shelter</h3>
-                <p>Learn the essentials of building a shelter in the wild with minimal supplies.</p>
-            </a>
+    <header>
+        <div class="container">
+            <h1>Survival Tricks</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                
+            </nav>
         </div>
-        <div class="article">
-            <a href="article2.html">
-                <img src="water.jpeg" alt="Finding Water in the Wilderness">
-                <h3>Finding Water in the Wilderness</h3>
-                <p>Discover techniques to locate and purify water sources while on the move.</p>
-            </a>
-        </div>
-        <div class="article">
-            <a href="article3.html">
-                <img src="fire.jpeg" alt="Fire Starting Tips">
-                <h3>Fire Starting Tips</h3>
-                <p>Master the art of fire starting with these simple and effective tips.</p>
-            </a>
-        </div>
-    </section>
+    </header>
 
-    <footer id="footer"></footer>
+    <main>
+        
+    <h2>Latest Articles</h2>
+    <div>
+        
+            <article>
+                <a href="articles/firearm-basics-what-you-need-to-know-about-gun-safety.html">
+                    <h2>Firearm Basics: What You Need to Know About Gun Safety</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_holding_gun_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Understanding firearm safety is crucial for anyone who owns or uses a gun. Proper handling and knowl... <a href="articles/firearm-basics-what-you-need-to-know-about-gun-safety.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/survival-cooking-preparing-meals-with-limited-resources.html">
+                    <h2>Survival Cooking: Preparing Meals with Limited Resources</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_cooking_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>When you find yourself in a survival situation, preparing meals with limited resources can be a chal... <a href="articles/survival-cooking-preparing-meals-with-limited-resources.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/emergency-preparedness-what-to-do-before-disaster-strikes.html">
+                    <h2>Emergency Preparedness: What to Do Before Disaster Strikes</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_thinking_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Being prepared for an emergency can make a significant difference in your ability to handle a disast... <a href="articles/emergency-preparedness-what-to-do-before-disaster-strikes.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/self-defense-strategies-for-real-world-situations.html">
+                    <h2>Self-Defense Strategies for Real-World Situations</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_fighting_pose_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>In today’s world, knowing how to protect yourself is an invaluable skill. Self-defense strategies ca... <a href="articles/self-defense-strategies-for-real-world-situations.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/essential-knots-every-survivalist-should-master.html">
+                    <h2>Essential Knots Every Survivalist Should Master</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_tying_knot_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Knowing how to tie a variety of knots is a critical skill for any survivalist. Knots can be used for... <a href="articles/essential-knots-every-survivalist-should-master.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/survival-psychology-staying-calm-under-pressure.html">
+                    <h2>Survival Psychology: Staying Calm Under Pressure</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_meditating_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Survival situations can be incredibly stressful and challenging. Maintaining a calm and focused mind... <a href="articles/survival-psychology-staying-calm-under-pressure.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/shelter-building-how-to-create-a-safe-haven-in-the-wilderness.html">
+                    <h2>Shelter Building: How to Create a Safe Haven in the Wilderness</h2>
+                    
+                        <img src="static/images/compressed_cartoony_debris_hut_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Building a shelter is one of the most critical skills in a survival situation. A well-constructed sh... <a href="articles/shelter-building-how-to-create-a-safe-haven-in-the-wilderness.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/navigating-without-a-compass-natural-navigation-techniques.html">
+                    <h2>Navigating Without a Compass: Natural Navigation Techniques</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_looking_sun_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>When you&#39;re in the wilderness without a compass, natural navigation techniques can help you find you... <a href="articles/navigating-without-a-compass-natural-navigation-techniques.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/water-purification-methods-ensuring-safe-drinking-water.html">
+                    <h2>Water Purification Methods: Ensuring Safe Drinking Water</h2>
+                    
+                        <img src="static/images/compressed_cartoony_person_boiling_water_dark_mode.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>Access to safe drinking water is crucial in any survival situation. Contaminated water can lead to s... <a href="articles/water-purification-methods-ensuring-safe-drinking-water.html">Read more</a></p>
+                
+            </article>
+        
+            <article>
+                <a href="articles/survival-medicine-diy-first-aid-in-emergencies.html">
+                    <h2>Survival Medicine: DIY First Aid in Emergencies</h2>
+                    
+                        <img src="static/images/compressed_stylistic_first_aid_wild.jpg" alt="Feature Image">
+                    
+                </a>
+                <p>In survival situations, access to medical help may be limited or nonexistent. Knowing how to perform... <a href="articles/survival-medicine-diy-first-aid-in-emergencies.html">Read more</a></p>
+                
+            </article>
+        
+    </div>
+    <div class="pagination">
+        
+        
+            <a href="page/2.html">Next</a>
+        
+    </div>
 
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Survival Tricks</p>
+        </div>
+    </footer>
 </body>
 </html>
